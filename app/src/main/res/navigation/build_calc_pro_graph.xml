@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/build_calc_pro_graph"
+    app:startDestination="@id/buildCalcProLoadFragment">
+
+    <fragment
+        android:id="@+id/buildCalcProLoadFragment"
+        android:name="com.buildcal.probuild.rgjof.presentation.ui.load.BuildCalcProLoadFragment"
+        android:label="BuildCalcProLoadFragment" >
+        <action
+            android:id="@+id/action_buildCalcProLoadFragment_to_buildCalcProV"
+            app:destination="@id/buildCalcProV"
+            app:popUpTo="@id/build_calc_pro_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/buildCalcProV"
+        android:name="com.buildcal.probuild.rgjof.presentation.ui.view.BuildCalcProV"
+        android:label="BuildCalcProV" />
+</navigation>
